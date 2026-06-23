@@ -6,10 +6,6 @@ Data Structures and Algorithms solutions in Java | documenting my learning journ
 - Strings
 - Sorting
 - Binary Search
-- Linked Lists
-- Stack
-- Queue
-- Trees
 
 ## Goals
 - Strengthen problem-solving skills
