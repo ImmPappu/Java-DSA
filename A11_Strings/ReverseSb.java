@@ -1,4 +1,4 @@
-package Strings;
+package A11_Strings;
 
 public class ReverseSb {
     public static void main(String[] args) {

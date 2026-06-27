@@ -1,4 +1,4 @@
-package Strings;
+package A11_Strings;
 
 public class ComareTO {
     static void main(String[] args) {

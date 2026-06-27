@@ -1,4 +1,4 @@
-package Strings;
+package A11_Strings;
 
 public class SubStringOfString {
     static void main(String[] args) {

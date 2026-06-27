@@ -1,4 +1,4 @@
-package Strings;
+package A11_Strings;
 
 public class InterningAndNewKeyword {
     public static boolean equals(String s1, String s2) {
