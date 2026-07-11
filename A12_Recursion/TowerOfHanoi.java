@@ -3,7 +3,7 @@ package A12_Recursion;
 public class TowerOfHanoi {
 
     public static void main(String[] args) {
-        hanoi(4,'A','B','C'); // src , helper , dest
+        hanoi(4,'A','B','C'); // src , helper , destination
 
     }
 
