@@ -10,7 +10,7 @@ public class MaxOfAllElements {
         int n = sc.nextInt();
 
          int arr[] = new int[n];
-         int max = arr[0]; //Integer.MAX_VALUE
+         int max = Integer.MIN_VALUE;
 
          for(int i=0;i<n;i++){
              arr[i] = sc.nextInt();

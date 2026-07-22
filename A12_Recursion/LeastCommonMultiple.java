@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class LeastCommonMultiple {
     public static int gcd(int a, int b) {
-        if(b==0) return a;
-        return gcd(b,a%b);
+        if(b==0) return a;            //if(a==0) return b;
+        return gcd(b,a%b);         //return gcd(b%a,a);
     }
 
     public static void main(String[] args) {

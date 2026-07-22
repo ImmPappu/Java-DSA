@@ -6,7 +6,7 @@ public class BuiltInMethods {
         String s = "Pappu";
         System.out.println(str.toUpperCase());
         System.out.println(str.toLowerCase());
-        System.out.println(str.indexOf("g"));
+        System.out.println(str.indexOf("g"));  //leetcode First occurence Question
         System.out.println(str.lastIndexOf("g"));
         System.out.println(str.contains("g"));
         System.out.println(s.concat(str));
