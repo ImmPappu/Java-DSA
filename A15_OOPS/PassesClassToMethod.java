@@ -1,4 +1,4 @@
-package OOPS;
+package A15_OOPS;
 
 public class PassesClassToMethod {
    public static class Car {

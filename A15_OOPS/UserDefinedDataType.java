@@ -1,4 +1,4 @@
-package OOPS;
+package A15_OOPS;
 
 import java.util.Scanner;
 

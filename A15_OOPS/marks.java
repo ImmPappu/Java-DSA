@@ -1,6 +1,4 @@
-package OOPS;
-
-import java.util.Arrays;
+package A15_OOPS;
 
 public class marks {
     public static class StudentData {

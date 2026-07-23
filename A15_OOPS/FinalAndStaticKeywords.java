@@ -1,5 +1,4 @@
-package OOPS;
-import java.util.*;
+package A15_OOPS;
 
 class Cricketer{
     static String country = "NZ";      //iska aalag block create hoga jisko sab koi use karenge

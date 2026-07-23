@@ -1,4 +1,4 @@
-package OOPS;
+package A15_OOPS;
 
 public class Polymorphism {
     public static class Dog {

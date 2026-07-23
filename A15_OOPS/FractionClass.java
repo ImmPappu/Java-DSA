@@ -1,4 +1,4 @@
-package OOPS;
+package A15_OOPS;
   //Data hiding is Abstraction and Encapsulation is binding code into a piece
 class Fraction {
     int num;

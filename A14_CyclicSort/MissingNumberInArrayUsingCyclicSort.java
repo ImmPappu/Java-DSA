@@ -1,4 +1,4 @@
-package CyclicSort;
+package A14_CyclicSort;
 
 public class MissingNumberInArrayUsingCyclicSort {
     public static void main(String[] args) {
