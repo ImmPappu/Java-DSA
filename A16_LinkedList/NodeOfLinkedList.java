@@ -1,9 +1,14 @@
 package A16_LinkedList;
 
-class Node{
+class Node {
     int val;
     Node next;
-        }
+
+    void print() {
+        System.out.print(val);
+    }
+
+    }
 
 public class NodeOfLinkedList {
     public static void main(String[] args) {
