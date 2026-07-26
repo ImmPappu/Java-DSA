@@ -2,8 +2,7 @@ package A16_LinkedList;
 
 public class RotateLinkedListByKfromLeft {
     static void main(String[] args) {
-        //Input: k = 4,
-        //
+        //Input: 10 -> 20 -> 30 -> 40 -> 50 ; k = 4,
         //Output: 50 -> 10 -> 20 -> 30 -> 40
         //Explanation:
         //Rotate 1: 20 -> 30 -> 40 -> 50 -> 10
