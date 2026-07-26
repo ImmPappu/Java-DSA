@@ -4,11 +4,11 @@ public class MergeTwoSortedLinkedList {
     static void main(String[] args) {
 
     }
-    public ListNode mergeTwoLists(ListNode head1, ListNode head2) {
-        ListNode t1 = head1;
-        ListNode t2 = head2;
-        ListNode dummy = new ListNode();//-1
-        ListNode t = dummy;
+    public Node mergeTwoLists(Node head1, Node head2) {
+        Node t1 = head1;
+        Node t2 = head2;
+        Node dummy = new Node(2);//-1
+        Node t = dummy;
         if(head1==null && head2 == null) return null;
         if(head1==null) return head2;
         if(head2==null) return head1;

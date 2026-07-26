@@ -1,6 +1,6 @@
 package A16_LinkedList;
 
-public class MergeSortforLinkedList {
+public class MergeSortforLinkedList {  //Sort Singly Linked List
     static void main(String[] args) {
 
     }
