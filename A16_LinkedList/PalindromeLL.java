@@ -2,7 +2,9 @@ package A16_LinkedList;
 import java.util.ArrayList;
 public class PalindromeLL {
     static void main(String[] args) {
-
+        //Input :- 1 -> 2 -> 1 -> 1 -> 2 -> 1,
+        //Output: true
+        //Explanation: The given linked list is 1 -> 2 -> 1 -> 1 -> 2 -> 1, which is a palindrome.
     }
     static Node reverseList(Node head) {    //Iterative ways
         Node forw = null;
