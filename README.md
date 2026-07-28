@@ -6,6 +6,10 @@ Data Structures and Algorithms solutions in Java | documenting my learning journ
 - Strings
 - Sorting
 - Binary Search
+- Recursion
+- Merge Sort
+- Cyclic Sort
+- LinkedList
 
 ## Goals
 - Strengthen problem-solving skills
