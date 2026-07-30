@@ -14,5 +14,18 @@ public class DetectLoopinlinkedlist {
         }
         return false;
     }
+    boolean isCircular(Node head) {
+           if (head == null) {
+        return true;
+    }
+
+    Node temp = head.next;
+
+    while (temp != null && temp != head) {
+        if(temp.next==head) return true;
+        temp = temp.next;
+    }
+    return false;
+}
 
 }
