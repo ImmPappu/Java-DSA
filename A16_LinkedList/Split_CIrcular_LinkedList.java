@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Split_CIrcular_LinkedList {
     static void main(String[] args) {
-        Node n = new Node();
+//        Node n = new Node();
     }
 //        public Pair<Node, Node> splitList(Node head) {
 //            Node t = head;
@@ -26,5 +26,5 @@ public class Split_CIrcular_LinkedList {
 //
 //            return new Pair<>(head,head2);   //Pair return   Node Pair<Node,Node> p = new Pair<>();
         }
-    }
+
 

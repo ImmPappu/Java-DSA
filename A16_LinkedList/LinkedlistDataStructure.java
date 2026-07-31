@@ -1,4 +1,5 @@
 package A16_LinkedList;
+
 class Node {   //User defined data type
     int val;
     Node next;  //Null
