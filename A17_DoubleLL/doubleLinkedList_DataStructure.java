@@ -3,6 +3,7 @@ class ListNode {         //User defined data type
     ListNode next;
     ListNode prev;
     int val;
+    public Node child;
     ListNode(int val){
         this.val = val;
     }

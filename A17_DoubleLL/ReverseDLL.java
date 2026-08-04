@@ -1,15 +1,16 @@
 package A17_DoubleLL;
-class Node {
-    int data;
-    Node next;
-    Node prev;
-
-    Node(int data) {
-        this.data = data;
-        this.next = null;
-        this.prev = null;
-    }
-}
+//class Node {
+//    int data;
+//    Node next;
+//    Node prev;
+//    Node child;
+//
+//    Node(int data) {
+//        this.data = data;
+//        this.next = null;
+//        this.prev = null;
+//    }
+//}
 public class ReverseDLL {
     static void main(String[] args) {
 
