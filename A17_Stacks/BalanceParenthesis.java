@@ -1,7 +1,5 @@
 package A17_Stacks;
-
 import java.util.Stack;
-
 public class BalanceParenthesis {
     static void main(String[] args) {
 
