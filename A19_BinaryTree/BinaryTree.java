@@ -30,6 +30,7 @@ public class BinaryTree {
         System.out.println(size(a));
         System.out.println(sum(a));
         System.out.println(product(a));
+        System.out.println(max(a));
     }
     private static int size(Node root){
         if(root==null)return 0;
@@ -55,6 +56,10 @@ public class BinaryTree {
                             */
         if(root==null)return 1;
         return root.val * product(root.left) * product(root.right); //1 for root itself;
+    }
+    private static int max(Node root){
+        if(root==null)return Integer.MIN_VALUE;
+        return root.val + max(root.left)+max(root.right); //1 for root itself;
     }
 
     private static void display(Node root) {
