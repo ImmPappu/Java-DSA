@@ -25,12 +25,19 @@ public class BinaryTree {
         a.left = b; a.right = c;
         b.left = d; b.right = e;
         c.left = f; c.right = g;
-        display(a);
         System.out.println();
         System.out.println(size(a));
         System.out.println(sum(a));
         System.out.println(product(a));
         System.out.println(max(a));
+        System.out.println(levels(a));
+        preorder(a);
+        System.out.println();
+        postorder(a);
+        System.out.println();
+        inorder(a);
+
+
     }
     private static int size(Node root){
         if(root==null)return 0;
@@ -59,13 +66,29 @@ public class BinaryTree {
     }
     private static int max(Node root){
         if(root==null)return Integer.MIN_VALUE;
-        return root.val + max(root.left)+max(root.right); //1 for root itself;
+        return Math.max(root.val , Math.max(max(root.left) ,max(root.right))); //1 for root itself;
+    }
+    private static int levels(Node root){
+        if(root==null) return 0;
+        return 1+Math.max(levels(root.left),levels(root.right));
     }
 
-    private static void display(Node root) {
+    private static void preorder(Node root) {
         if(root==null) return;
         System.out.print(root.val +" ");    //root
-        display(root.left);                 //left
-        display(root.right);                //right
+        preorder(root.left);                 //left
+        preorder(root.right);                //right
+    }
+    private static void postorder(Node root) {
+        if(root==null) return;
+        postorder(root.left);
+        postorder(root.right);
+        System.out.print(root.val+" ");
+    }
+    private static void inorder(Node root) {
+        if(root==null) return;
+        inorder(root.left);
+        System.out.print(root.val +" ");
+        inorder(root.right);
     }
 }
