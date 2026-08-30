@@ -1,10 +1,22 @@
 package A19_BinaryTree;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
 class Node{
     int val;
     Node left;
     Node right;
     Node(int val){
         this.val=val;
+    }
+}
+class Pair{
+    Node node;
+    int level;
+    Pair(Node node,int level){
+        this.node=node;
+        this.level=level;
     }
 }
 public class BinaryTree {
@@ -25,19 +37,62 @@ public class BinaryTree {
         a.left = b; a.right = c;
         b.left = d; b.right = e;
         c.left = f; c.right = g;
-        System.out.println();
-        System.out.println(size(a));
-        System.out.println(sum(a));
-        System.out.println(product(a));
-        System.out.println(max(a));
-        System.out.println(levels(a));
-        preorder(a);
-        System.out.println();
-        postorder(a);
-        System.out.println();
-        inorder(a);
+//        System.out.println();
+//        System.out.println(size(a));
+//        System.out.println(sum(a));
+//        System.out.println(product(a));
+//        System.out.println(max(a));
+//        System.out.println(levels(a));
+//        preorder(a);
+//        System.out.println();
+//        postorder(a);
+//        System.out.println();
+//        inorder(a);
+//          levelOrder(a);
+        levelOrderLineWise(a);
 
 
+    }
+
+    private static void levelOrderLineWise(Node root) {
+        Queue<Pair> q = new LinkedList<>();
+        int currlevel = 0;
+        q.add(new Pair(root,0));
+        while(q.size()>0){
+            Pair front = q.remove();
+            Node node = front.node;
+            int level = front.level;
+            if(front.level!=currlevel){
+                currlevel++;
+                System.out.println();
+            }
+            System.out.print(front.node.val+" ");
+            if(node.left!=null) q.add(new Pair(node.left,currlevel+1));
+            if(node.right!=null) q.add(new Pair(node.right,currlevel+1));
+        }
+    }
+    private static void levelOrder(Node root) {
+        Queue<Node> q = new LinkedList<Node>();
+        q.add(root);
+        while(q.size()>0){
+            Node front = q.remove();
+            System.out.print(front.val+" ");
+            if(front.left!=null) q.add(front.left);
+            if(front.right!=null) q.add(front.right);
+        }
+        System.out.println();
+    }
+    public ArrayList<Integer> levelOrders(Node root) {
+        ArrayList<Integer> ans = new ArrayList<>();
+        Queue<Node> q = new LinkedList<Node>();
+        q.add(root);
+        while(q.size()>0){
+            Node front = q.remove();
+            ans.add(front.val);
+            if(front.left!=null) q.add(front.left);
+            if(front.right!=null) q.add(front.right);
+        }
+        return ans;
     }
     private static int size(Node root){
         if(root==null)return 0;
@@ -68,11 +123,6 @@ public class BinaryTree {
         if(root==null)return Integer.MIN_VALUE;
         return Math.max(root.val , Math.max(max(root.left) ,max(root.right))); //1 for root itself;
     }
-    private static int levels(Node root){
-        if(root==null) return 0;
-        return 1+Math.max(levels(root.left),levels(root.right));
-    }
-
     private static void preorder(Node root) {
         if(root==null) return;
         System.out.print(root.val +" ");    //root
@@ -90,5 +140,28 @@ public class BinaryTree {
         inorder(root.left);
         System.out.print(root.val +" ");
         inorder(root.right);
+    }
+    private static int levels(Node root){
+        if(root==null) return 0;
+        return 1+Math.max(
+                levels(root.left),
+                levels(root.right)
+        );
+        //              3
+        //             / \
+        //            4   2
+        //           / \ / \
+        //         -1  1 6  9
+        
+        //              3
+        //              ↓
+        //       1 + max(2, 2)
+        //            /     \
+        //           /       \
+        //          4         2
+        //          ↓         ↓
+        //      1+max(1,1)  1+max(1,1)
+        //          ↓         ↓
+        //         2          2
     }
 }
